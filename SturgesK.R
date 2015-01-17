@@ -1,4 +1,4 @@
-SturgesK = function(vec)
+SturgesK = function(vec, res_type="letters")
 {
 	len_class = nclass.Sturges(vec)
 	len_uniq = length(unique(vec))
