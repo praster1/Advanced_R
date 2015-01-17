@@ -11,7 +11,7 @@ make_digit_mat = function(vec)
 		res_mat[which(vec == sort(unique(vec))[i]), i] = 1
 	}
 	
-	dimnames(res_mat)[2] = sort(unique(vec))
+	dimnames(res_mat)[[2]] = sort(unique(vec))
 	
 	return(res_mat)
 }
